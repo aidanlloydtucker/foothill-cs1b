@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2016 Aidan Lloyd-Tucker
  *
  * This program is free software: you can redistribute it and/or modify
@@ -25,6 +25,9 @@ public class foothill
 
    public static void main(String[] args)
    {
+      System.out.println("TESTING CARD CLASS\n");
+      testCardClass();
+      System.out.println("\nTESTING HAND CLASS\n");
       testHandClass();
    }
    public static void testCardClass()
@@ -33,7 +36,7 @@ public class foothill
       for (Card card : cardArray) {
          System.out.println(card);
       }
-      System.out.println("\nCHANGING VALUES\n");
+      System.out.println("CHANGING VALUES");
       cardArray[0].set('L', Card.Suit.spades);
       cardArray[1].set('K', Card.Suit.diamonds);
       for (Card card : cardArray) {
