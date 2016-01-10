@@ -23,9 +23,8 @@ package module1;
 public class Hand
 {
 
-   public int MAX_CARDS = 50;
+   public final int MAX_CARDS = 50;
    private Card[] myCards;
-   // Why not just use myCards.length?
    private int numCards;
    // Init
    Hand()
